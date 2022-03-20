@@ -1,3 +1,4 @@
+import {Wrapper} from './Form-styled';
 const LanguageForm = ({values, handleChange, nextStep, prevStep}) => {
     const nextForm = e => {
         e.preventDefault();
@@ -10,19 +11,24 @@ const LanguageForm = ({values, handleChange, nextStep, prevStep}) => {
     }
 
     return(
-        <>
-        <h1>Do you speak any other languages?</h1>
-        <button>Yes</button>
-        <button onClick={nextStep}>No</button>
-        <form>
+        <Wrapper>
+        <div className="container">
+            <h1>Do you speak any other languages?</h1>
+            <input type='button' value='Yes'/>
+            <input type='button' value='No' onChange={handleChange('language')} />
+            <form>
             <label>
-                <p>What language(s) do you speak?</p>
+                <h4>What language(s) do you speak?</h4>
                 <input type="text" onChange={handleChange('language')}/>
             </label>
         </form>
-        <button onClick={prevForm}>Back</button>
-        <button onClick={nextForm}>Next</button>
-        </>
+        </div>
+        
+        <div className="btn">
+            <button className='direction-btn' onClick={prevForm}>Back</button>
+            <button className='direction-btn' onClick={nextForm}>Next</button>
+        </div>
+        </Wrapper>
     )
 }
 

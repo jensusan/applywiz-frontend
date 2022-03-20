@@ -8,7 +8,7 @@ const Profile = ({values, handleChange, nextStep}) => {
     }
     return(
         <Wrapper>
-        <h1>Please fill in the information below to get started!</h1>
+        <h1 className='title'>Please fill in the information below to get started!</h1>
         <div className="profile_form">
             <div className="profile_img">
                 <img src='/photo-filler.png' alt='photo icon'/>

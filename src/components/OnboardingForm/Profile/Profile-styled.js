@@ -3,9 +3,11 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
 color: #2A4758;
 
-h1 {
+.title {
     padding: 20px;
+    font-size: 30px;
 }
+
 .profile_img {
     display: flex;
     flex-direction: column;
