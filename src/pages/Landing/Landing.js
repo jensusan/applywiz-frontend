@@ -1,4 +1,5 @@
 import './Landing-styles.css';
+import {Link} from 'react-router-dom';
 
 const Landing = () => {
     return(
@@ -25,7 +26,9 @@ const Landing = () => {
                 </div>
             </div>
             <h3>Apply wiz aims to bridge the gap between the talent and the companies looking to hire. </h3>
-            <button>Sign up for free</button>
+            <Link to='/login'>
+                <button className='signup'>Sign up for free</button>
+            </Link>
         </>
     )
 };

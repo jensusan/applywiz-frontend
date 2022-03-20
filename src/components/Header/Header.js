@@ -1,8 +1,17 @@
+import {Wrapper} from './Header-styles.js';
+import { Link } from 'react-router-dom';
+
 const Header = () => {
     return(
-        <>
-            <h1>Header</h1>
-        </>
+        <Wrapper>
+        <div className="header">
+            <h1>Apply Wiz</h1>
+            <div className='links'>
+                <Link to='/' style={{textDecoration: 'none', color: '#FFFF'}}>HOME</Link>
+                <Link to='/' style={{textDecoration: 'none', color: '#FFFF'}}>LOGIN</Link>
+            </div>
+        </div>
+        </Wrapper>
     )
 }
 

@@ -9,6 +9,7 @@ h1 {
     font-size: 30px;
     line-height: 41px;
     color: #2A4758;
+    margin: 20px;
 }
 
 .container {
@@ -26,6 +27,7 @@ h1 {
     line-height: 41px;
     text-align: center;
     color: #2A4758;
+    margin: 20px;
 }
 
 .text {
@@ -54,9 +56,10 @@ h3 {
     font-size: 30px;
     line-height: 41px;
     color: #2A4758;
+    margin: 40px;
 }
 
-button {
+.signup {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -69,4 +72,5 @@ button {
     background: #FBE026;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
+    border: none;
 }

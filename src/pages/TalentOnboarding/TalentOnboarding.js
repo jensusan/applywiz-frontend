@@ -4,7 +4,6 @@ const TalentOnboarding = ({URL}) => {
 
     return(
         <>
-            <h1>Talent Onboarding</h1>
             <OnboardingForm />
         </>
     )
