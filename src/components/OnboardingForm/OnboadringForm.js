@@ -23,6 +23,8 @@ const OnboardingForm = () => {
     //     })
     // }
 
+    
+
     const [userInput, setUserInput] =useState({
         step: 1,
         firstName: '',
@@ -45,25 +47,30 @@ const OnboardingForm = () => {
         veteran: '',
         disability: ''
     })
-
+    
+    console.log(userInput)
     const nextStep = () => {
-        setUserInput(prevState => ({
-            ...prevState, 
-            step: step + 1
-        }))
+      setUserInput(prevState => ({
+          ...prevState, 
+          step: step + 1
+      }))
     }
     console.log(userInput)
     const prevStep = () => {
-        // const {step} = userInput;
-        setUserInput(prevState => ({
-            ...prevState, 
-            step: step - 1
-        }))
+      // const {step} = userInput;
+      setUserInput(prevState => ({
+          ...prevState, 
+          step: step - 1
+      }))
     }
-
+    
     const handleChange = input => e => {
-        setUserInput(prevState => ({...prevState, [input]: e.target.value}))
+      setUserInput(prevState => ({...prevState, [input]: e.target.value}))
     }
+    const handleFileChange = (input, file) => e => {
+      setUserInput(prevState => ({...prevState, [input]: e.target.files}))
+    }
+   
 
     const {step } = userInput
     const {firstName,
@@ -113,6 +120,7 @@ const OnboardingForm = () => {
                     handleChange={handleChange}
                     values={values}
                     prevStep={prevStep}
+                    handleFileChange={handleFileChange}
                     />
                 )
             case 2:

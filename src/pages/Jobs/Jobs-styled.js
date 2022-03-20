@@ -17,6 +17,11 @@ margin: 70px;
     margin: 40px;
 }
 
+.company-title{
+    text-align: center;
+    margin: 0
+}
+
 h3 {
     text-align: left;
     margin: 30px 0px 15px 0px;
@@ -24,5 +29,10 @@ h3 {
 
 li {
     margin-left: 20px;
+    font-size: 24px;
+}
+
+p {
+    font-size: 24px;
 }
 `;

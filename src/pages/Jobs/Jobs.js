@@ -6,7 +6,7 @@ const Jobs = () => {
         <div className="header">
             <div className="company">
                 <img src='Amazon Logo 1.png' alt='company logo'/>
-                <h4>Amazon</h4>
+                <h3 className='company-title'>Amazon</h3>
             </div>
             <div className="overview">
             <h3 className='job-title'>UX Desginer</h3>

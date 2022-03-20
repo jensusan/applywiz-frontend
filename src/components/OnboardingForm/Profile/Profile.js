@@ -1,11 +1,14 @@
 import {Wrapper} from './Profile-styled';
 
 
-const Profile = ({values, handleChange, nextStep}) => {
+const Profile = ({values, handleChange, nextStep, handleFileChange}) => {
     const nextForm = e => {
         e.preventDefault();
         nextStep();
     }
+    
+   
+
     return(
         <Wrapper>
         <h1 className='title'>Please fill in the information below to get started!</h1>
@@ -32,7 +35,8 @@ const Profile = ({values, handleChange, nextStep}) => {
                         defaultValue={values.website}/>
                     </label>
                     <label>Resume:
-                        <input type="file" onChange={handleChange('resume')}/>
+                        <input type="file" 
+                        onChange={handleFileChange('resume')}/>
                     </label>
                     <label>LinkedIn:
                         <input type="text" onChange={handleChange('linkedIn')}
