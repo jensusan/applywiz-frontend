@@ -33,10 +33,11 @@ const CompanySize = ({values, handleChange, nextStep, prevStep, handleShowForm, 
             <form>
                 <p>What size company do you prefer?</p>
                 <input type='button' value='0-50' onClick={handleChange('companySize')} />
-                <button value='51-50' onClick={handleChange('companySize')}>51-100</button>
-                <button value='101-500' onClick={handleChange('companySize')}>101-500</button>
-                <button value='501-1000' onClick={handleChange('companySize')}>501-1000</button>
-                <button value='1000+' onClick={handleChange('companySize')}>1000 +</button>
+                <input type='button' value='50-100' onClick={handleChange('companySize')} />
+                <input type='button' value='100-500' onClick={handleChange('companySize')} />
+                <input type='button' value='500-1000' onClick={handleChange('companySize')} />
+                <input type='button' value='1000 +' onClick={handleChange('companySize')} />
+                
             </form>
             <div>
             <button onClick={prevForm}>Back</button>

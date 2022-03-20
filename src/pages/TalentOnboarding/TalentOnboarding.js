@@ -1,5 +1,7 @@
 import OnboardingForm from "../../components/OnboardingForm/OnboadringForm";
-const TalentOnboarding = () => {
+
+const TalentOnboarding = ({URL}) => {
+
     return(
         <>
             <h1>Talent Onboarding</h1>

@@ -11,8 +11,18 @@ import VisaForm from "./VisaForm";
 import SalaryForm from "./SalaryForm";
 import VeteranForm from "./VeteranForm";
 import FormComplete from "./FormComplete";
+// const axios = require(axios);
 
 const OnboardingForm = () => {
+
+    // function addSurvey(userInput) {
+    //     axios.post(`${URL}survey/`, userInput).then(response => {
+    //         console.log(response)
+    //     }).catch(error => {
+    //         console.log(error.response.data)
+    //     })
+    // }
+
     const [userInput, setUserInput] =useState({
         step: 1,
         firstName: '',

@@ -1,6 +1,7 @@
 const VeteranForm = ({values, handleChange, nextStep, prevStep}) => {
     const nextForm = e => {
         e.preventDefault();
+        
         nextStep();
     }
     const prevForm = e => {
