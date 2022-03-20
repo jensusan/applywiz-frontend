@@ -5,6 +5,8 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Login from './pages/Login/Login';
 import TalentOnboarding from './pages/TalentOnboarding/TalentOnboarding';
+import Home from './pages/Home/Home';
+import Jobs from './pages/Jobs/Jobs';
 
 
 
@@ -20,6 +22,8 @@ function App() {
         <Route path='' element={<Landing />} />
         <Route path='/login' element={<Login />}/>
         <Route path='/onboarding' element={<TalentOnboarding URL={URL}/>} />
+        <Route path='/home' element={<Home />}/>
+        <Route path='/jobs' element={<Jobs />}/>
       </Routes>
       <Footer />
     </>

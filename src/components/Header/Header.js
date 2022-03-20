@@ -7,8 +7,8 @@ const Header = () => {
         <div className="header">
             <h1>Apply Wiz</h1>
             <div className='links'>
-                <Link to='/' style={{textDecoration: 'none', color: '#FFFF'}}>HOME</Link>
-                <Link to='/' style={{textDecoration: 'none', color: '#FFFF'}}>LOGIN</Link>
+                <Link to='/home' style={{textDecoration: 'none', color: '#FFFF'}}>HOME</Link>
+                <Link to='/login' style={{textDecoration: 'none', color: '#FFFF'}}>LOGIN</Link>
             </div>
         </div>
         </Wrapper>
