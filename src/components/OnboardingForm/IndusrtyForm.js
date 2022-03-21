@@ -14,10 +14,13 @@ const IndustryForm = ({values, handleChange, nextStep, prevStep}) => {
         <div className="container">
             <h1>Are you interested in a specific indusrty?</h1>
             <form>
-                <input type="button" value='As soon as possible' onChange={handleChange('startDate')}/>
-                <input type="button" value='In the next three months' onChange={handleChange('startDate')}/>
-                <input type="button" value='In the next year' onChange={handleChange('startDate')}/>
-                <input type="button" value="I'm not sure" onChange={handleChange('startDate')}/>
+                <input type="button" value='Gaming' onChange={handleChange('industry')}/>
+                <input type="button" value='Fashion' onChange={handleChange('industry')}/>
+                <input type="button" value='Entertainment' onChange={handleChange('industry')}/>
+                <input type="button" value='eCommerce' onChange={handleChange('industry')}/>
+                <input type="button" value='FinTech' onChange={handleChange('industry')}/>
+                <input type="button" value="Any Industry" onChange={handleChange('industry')}/>
+                <input type="text" placeholder="Other" onChange={handleChange('industry')}/>
                 
             </form>
         </div>
