@@ -17,4 +17,9 @@ color: #FFFF;
     margin: 0;
     padding: 10px;
 }
+
+img{
+    height: 20px;
+    width: 39px;
+}
 `;

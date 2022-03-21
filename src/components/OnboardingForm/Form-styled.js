@@ -23,6 +23,11 @@ input{
     font-size: 26px;
 }
 
+input[type=button]:focus {
+    background: #FBE026;
+}
+
+
 .btn {
     margin: 20px;
 }

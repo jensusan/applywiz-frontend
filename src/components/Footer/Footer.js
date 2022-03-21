@@ -3,6 +3,7 @@ const Footer = () => {
     return(
         <Wrapper>
             <div className='links'>
+            <img src="/aw-logo.png" alt="logo" />
             <p>About us</p>
             <p>Jobs</p>
             <p>Blog</p>
